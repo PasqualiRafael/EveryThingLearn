@@ -3,10 +3,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# My choose
-.gitignore
-EveryThingLearn.code-workspace
-
 # C extensions
 *.so
 
@@ -140,3 +136,8 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# My choose
+EveryThingLearn.code-workspace
+test.py
+mirror.py
