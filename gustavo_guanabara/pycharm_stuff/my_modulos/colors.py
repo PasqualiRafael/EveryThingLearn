@@ -1,4 +1,4 @@
-# dictionary
+# dicionary
 
 # cores do texto
 cores = {
@@ -25,7 +25,10 @@ back = {
     "grey": "\033[47m",
 }
 # tipos de font
-font = {"close": "\033[m", "bold": "\033[1m", "under": "\033[4m", "negative": "\033[7m"}
-
-if __name__ == "__main__":
-    print("Bom dia, {}Rafael{}!".format(cores["green"], cores["close"]))
+font = {
+    "close": "\033[m",
+    "bold": "\033[1m",
+    "under": "\033[4m",
+    "negative": "\033[7m"
+}
+# print('Bom dia, {}Rafael{}!'.format(cores['green'], cores['close']))

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+    Atributos Globais
+
+        - Class
+            uma classe
+        - contenteditable 
+            pode ser editado no preview
+        - data-*     
+
+        - hidden
+            esconder
+        - id
+            puxar pelo id
+        - style
+            criar um style, melhor fazer pelo css
+        - tabindex
+            quando se aperta tab, seguirá a ordem do tabindex="1" e assim por diante
+        - title
+            quando o mouse estiver em cima descansando aparecerá um texto
+
+-->
+<html>
+
+<head>
+    <style>
+        h1.intro {
+            color: blue
+        }
+
+        p.important {
+            color: green
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="intro" title="titulo">Header 1</h1>
+    <p>A paragraph.</p>
+    <p class="important" contenteditable="true">Note that this is an important paragraph. :)</p>
+</body>
+
+</html>

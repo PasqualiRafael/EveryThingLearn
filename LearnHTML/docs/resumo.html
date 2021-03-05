@@ -1,0 +1,155 @@
+<!--
+    Semantica no html basicamente é a arrumação do código, sempre manter ele bem estruturado
+    quanto melhor estruturado melhor ele irá ficar nas paginas de pesquisa, pois será mais facil
+    para os programas encontrarem as coisas na pagina.
+
+    Listas(li)
+
+    - Ordenadas <ol> aparece numeros
+    - não ordenadas <ul> aparece pontos  
+        
+    Lista de descrição
+
+        <dl>
+            <dt></dt>
+            <dd></dd>
+        </dl>
+        
+    Texto
+
+    - <strong> and <bold> é negrito
+    - <br> quebra de linha    
+    - <em> italico
+
+    Citações    
+
+    - <blockquote> bloco de citação
+    - <cite> pagina citada
+    - <q> bloco de citação curta
+
+    Abreviações
+
+    - <abbr> serve pra colocar pontilhados em baixo da palavra e com o mouse em cima mostra informações adicionais
+    
+    Representando códigos de computador
+
+    - <code> Parte genérica de código
+    - <pre> blocos de código, pois essa tag mantém os espaços em brancos e recuos que eu colocar no código
+        
+    Elementos Genéricos
+
+    - <div> Criar grupos para organização do código
+    - <span> faz com o texto fica na mesma linha mas de maneira organizada no código.
+        
+    Detalhes de contato
+
+    - <address> especificar quem fez, e seu contato   
+
+    # introdução
+
+    ## O que significa CSS
+    - Cascading Style Sheet
+    - Código para criar estilos no HTML
+    - HTML é a estrutura, e o CSS é a beleza
+    - Não é uma liguagem de programação
+    - É uma liguagem de style sheet 
+
+    # Comentarios em css /* e termina */
+
+    # Selectors
+        conecta um elemento HTML com o css
+    
+    ## Types
+
+    * Global selector '*'
+    * Element/Type selector 'h1, h2, p, div'
+    * ID Selector '#box, #container'
+    * Class Selector '.red, .m-4'
+    * Attribute selector, Pseudo-class, Pseudo-element, e outros
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./resumo.css" rel="stylesheet">
+    <title>Resumo</title>
+    <style>
+        h1.titulo {
+            color: rgb(58, 184, 131);
+            font-size: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="listas">
+        <h1 class="titulo">Suco detox </h1>
+        <h2 class="subtitle">Ingredientes</h2>
+        <ul>
+            <li>3 folhas de couve</li>
+            <li>1 laranja</li>
+            <li>1 pedacinho de gengibre</li>
+            <li>300ml de água</li>
+            <li>Gelo a gosto</li>
+        </ul>
+    </div>
+
+    <div class="lista de descricao">
+        <h2>Glossário</h2>
+        <dl>
+            <dt>Hypertext</dt>
+            <dd>É um hiper texto com possibilidades...</dd>
+
+            <dt>Markup</dt>
+            <dd>Marcação do texto.</dd>
+
+            <dt>Language</dt>
+            <dd>Linguagem com sua semantica e sintaxe...</dd>
+        </dl>
+        <a href="https://google.com.br">Saiba mais...</a>
+    </div>
+
+    <div id="container" class="citacao">
+        <p>
+        <blockquote cite="https://google.com.br">
+            O <strong>Elemento HTML <code>&lt;blockquote&gt;</code>
+            </strong> (ou <em> HTML Block Quotation Element</em>) indica que um texto externo
+            foi citado.
+
+            <p>(<a href="https://google.com.br"><cite>Fonte</cite></a>)</p>
+        </blockquote>
+        </p>
+    </div>
+
+    <div class="abreviacao">
+        <p>
+            Usamos <abbr title="Hypertext Markup Language">HTML</abbr> para estruturar
+            nosso documento da web.
+        </p>
+    </div>
+
+    <div class="code">
+        <pre>
+        <code>
+            document
+                .querySelector("body")
+            print(f"Dessa forma ele respeita os espacos do codigo")
+        </code>
+    </pre>
+    </div>
+
+    <div class="contato">
+        <address>
+            <p><button>Pasquali</button><br>
+                <strong>Ribeirão Preto, SP</strong>
+            </p>
+        </address>
+    </div>
+</body>
+
+</html>

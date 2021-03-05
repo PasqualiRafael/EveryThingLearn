@@ -1,0 +1,106 @@
+/*
+    # introdução
+
+    ## O que significa CSS
+    - Cascading Style Sheet
+    - Código para criar estilos no HTML
+    - HTML é a estrutura, e o CSS é a beleza
+    - Não é uma liguagem de programação
+    - É uma liguagem de style sheet 
+
+    # Comentarios em css /* e termina
+
+    linkar html e css
+        comando no html <head>
+            <link href="./resumo.css" rel="stylesheet">
+    
+*/
+/*
+    # Selectors
+        conecta um elemento HTML com o css
+    
+    ## Types
+
+    - Global selector '*'
+    - Element/Type selector 'h1, h2, p, div'
+    - ID Selector '#box, #container'
+    - Class Selector '.red, .m-4'
+    - Attribute selector, Pseudo-class, Pseudo-element, e outros
+
+    #Box Model
+
+    - Voce ira perceber que quase tudo sao caixas do css
+    - Posicionamentos, tamanhos, espaçamentos, bordas, cores
+    - Caixa pode ficar ao lado uma da outra, ou acima
+    - Elementos HTML são caixas
+
+    # Adicionando CSS no HTMl
+
+    - inline
+      atributo style
+    - <style>
+      tag html que irá conter o css
+    - <link>
+      arquivo css externo
+    - @import
+      arquivo css externo
+
+*/
+/*
+  # Cascata (cascading)
+
+  A escolha do browser de qual regra aplicar, cajo haja muitas regras para o mesmo elemento
+  * seu estilo é lido de cima para baixo
+  É levado em consideração 3 fatores.
+
+  1. Origem do estilo
+    inline> tag style > tag link
+  2. Especifidade
+    É o calculo matematico, onde, cadatipo de seletor e origem do estilo, possuem valores a
+    a serem considerados.
+
+    0. Universal selector, combinators e nagation pseudo-class (:not())
+    1. Element type selector e pseudo-elements (::before, ::after)
+    10. Classes e attribute selectors ([type="radio"])
+    100. ID selector
+    1000. Inline
+  3. Importancia (!important)
+    cuidado, evite o uso
+    não é considerado uma boa prática
+    quebra o fluxo natural da cascata
+*/
+/*
+# Shorthand
+
+ - Junção de propriedades
+  *background properties
+  background-color: #000;
+  background-image: url(image/bg.gif);
+  background-repeat: no-repeat;
+  background-position: left top;
+ - Resumido (não precisa ser em ordem, o css consegue diferenciar)
+  background: #000 no-repeat url(image/bg.gif) left top;
+ - Legível
+ */
+
+* {
+  margin: 2px;
+}
+#container {
+  width: 250px;
+}
+.citacao {
+  /* color: black; */
+  margin: 40px;
+}
+.contato {
+  margin: 20px;
+}
+h2 {
+  border: none;
+  margin: 20px;
+  padding: 50px;
+
+  color: black;
+  background: none;
+}
